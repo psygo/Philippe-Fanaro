@@ -1,0 +1,145 @@
+body{
+    background-color: #000080;
+    /*font-family: menlo;*/
+    font-family: "Crimson Text", "Times New Roman", serif;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2ch; /* Existem outras medidas além de px, como rem, em, % (em geral, toma como base a fonte do "pai dele") e ch. */
+    color: grey
+}
+#titulo{
+    text-transform: uppercase; /* Não só efeito visual, mas semântico */
+}
+h2{
+    background:-moz-linear-gradient(top,#9C8F67,#C7BE9B);
+    background:-webkit-linear-gradient(top,#9C8F67,#C7BE9B);
+    border-radius: 15px;
+    padding-left: 5px;
+    border: 1px solid black;
+    color: black;
+    clear: both;
+}
+.djsato{
+    position:relative;
+    left: 0px;
+    -webkit-animation: aparece;
+    animation: aparece 1s;
+}
+@-webkit-keyframes aparece{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes aparece{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.djsato-caption{
+    position:absolute;
+    left: 160px;
+}
+/*figure{
+    box-shadow: 5px 5px 3px rgba(0,0,0,0.7);
+    -moz-transform:rotate(-5deg);
+    -webkit-transform:rotate(-5deg);
+}*/
+aside{
+    text-align: center;
+}
+aside ul{
+    list-style-type: none;
+}
+.icones-sociais li{
+    display: inline-block;
+}
+.icones-sociais a{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-indent: -9999px; /* image replacement */
+}
+.github{
+    background-image: url("../images/github.png");
+}
+.linkedin{
+    background-image: url("../images/linkedin.png");
+}
+blockquote{
+    color: black;
+    background-color: grey;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    border: 10px #C2CCCA solid;
+    width: 250px;
+    top:0;
+    right:0;
+    position:fixed;
+    box-sizing: border-box;
+    border-radius: 10px 0;
+}
+blockquote cite{
+    font-style: italic;
+}
+/*#diogenes{
+    top:0;
+    right:0;
+    max-width: 250px;
+    width: auto;
+    height: auto;
+    position:fixed;
+    position:absolute;
+}*/
+#table{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+#table th{
+    background-color: grey;
+    color: black;
+    border: 1px solid black;
+}
+#table td{
+    text-align: center;
+    border: 1px solid black;
+}
+nav{
+    text-align: center;
+    width: 150px;
+    float: left;
+    margin-right: 50px;
+    padding-left: 0px;
+    box-sizing: border-box;
+}
+nav ul li:hover{
+    background-color: white;
+}
+nav ul li{
+    background-color: #C7BE9B;
+    margin-bottom: px;
+    border: 2px solid black;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding-left: 0px;
+}
+nav ul{
+    list-style: none;
+}
+#section{
+    position: relative;
+    left: 0;
+/*    width: 740px right;*/
+/*    float: right;*/
+}
