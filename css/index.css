@@ -1,7 +1,7 @@
 body{
-    background-color: black;
-    color: white;
-    opacity: 0.7;
+    background-color: darkkhaki;
+    color: black;
+    opacity: 1;
     /*font-family: menlo;*/
     font-family: "Crimson Text", "Times New Roman", serif;
     margin-left: auto;
@@ -17,13 +17,14 @@ body{
     color: #F2F2F2;
     position: relative;
     float: center;
-    border: 5px solid white;
+    border: 5px solid black;
     border-radius: 5px;
     padding-top: 2px;
 }
 h2{
-    background-color: green;
-    border: 5px solid white;
+    background-color: forestgreen;
+    border: 5px solid black;
+    color:black;
     border-radius: 5px;
     padding-left: 5px;
 }
@@ -56,6 +57,7 @@ nav ul{
     position: absolute;
     top: 0;
     left: 160px;
+    padding-right: 10px;
 }
 .foto{
     width: 250px;
@@ -64,4 +66,64 @@ nav ul{
 .figuras{
     margin-left: auto;
     margin-right: auto;
+}
+.icones-redes-sociais a {
+    position: relative;
+}
+
+.icones-redes-sociais a:hover::after,
+.icones-redes-sociais a:focus::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    background: black;
+    color: white;
+    top: 100%;
+    width: 300%;
+    right: 0;
+    text-indent: 0;
+    font-size: .75em;
+}
+
+.icones-redes-sociais a:hover::before,
+.icones-redes-sociais a:focus::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    background-color: black;
+    transform: translateY(.5em) rotate(45deg);
+}
+.github {
+    background-image: url(../images/github.png);
+}
+.linkedin {
+    background-image: url(../images/linkedin.png);
+}
+.facebook{
+    background-image: url(../images/facebook.png);
+}
+.icones-redes-sociais li {
+    display: inline-block;
+}
+.icones-redes-sociais a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-indent: -99999px;
+}
+p{
+    padding-left: 10px;
+}
+.link{
+    font: bold 13px Arial;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
 }

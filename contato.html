@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+        <meta charset="UTF-8"/>
+         <link rel = "stylesheet"
+          type = "text/css"
+          href = "reset.css"> 
+        <title>Philippe Fanaro</title>
+        <meta name="viewport" 
+              content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet"
+              type = "text/css"
+              href = "css/index.css">
+        <link rel = "stylesheet"
+              type = "text/css"
+              href = "css/contato.css">
+        <link rel="stylesheet"
+              href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700">
+    
+</head>
+    
+<body>
+    
+    <main>
+    
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li> 
+                    <a href="fisica.html">
+                        Física
+                    </a> 
+                </li>
+                <li> 
+                    <a href="matematica.html">
+                        Matemática
+                    </a> 
+                </li>
+                <li> 
+                    <a href="go.html">
+                        Go!
+                    </a> 
+                </li>
+                <li> 
+                    <a href="contato.html">
+                        Contato
+                    </a> 
+                </li>
+            </ul>
+        </nav>
+    
+    </main>
+    
+    <section id="section">
+        
+        <h1 class="title">Contato</h1>
+        <div class="container">
+            <form>
+                <fieldset>
+                    <legend>Seus dados</legend>
+                    <label class="com-icone" for="nome">Nome Completo</label>
+                    <input id="nome" type="text" name="nome" required autofocus pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres">
+                    <label class="com-icone" for="email">e-mail</label>
+                    <input id="email" type="email" name="email" required placeholder="seu@email.com">
+                </fieldset>
+                <fieldset>
+                    <legend>Assunto</legend>
+                     <label>
+                        <input type="radio" name="assunto" value="fisica">
+                        Física
+                    </label>
+                    <label>
+                        <input type="radio" name="assunto" value="matematica">
+                        Matemática
+                    </label>
+                    <label>
+                        <input type="radio" name="assunto" value="Go">
+                        Go
+                    <label>
+                        <input type="radio" name="assunto" value="Outro">
+                        Outro
+                        <input type="text" name="outro-assunto">
+                    </label>
+                </fieldset>
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" cols="60" rows="10" placeholder="Digite aqui sua mensagem"></textarea>
+                <button type="submit">Enviar mensagem</button>
+            </form>
+        </div>
+            
+        <p> Caso o formulário não funcione ou você queira me contactar via sua própria interface de email: <a href="philippefanaro@gmail.com">philippefanaro@gmail.com</a></p>
+    
+    </section>
+    
+</body>
+    
+</html>
