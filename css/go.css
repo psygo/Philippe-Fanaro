@@ -1,3 +1,15 @@
 .youtube{
     padding-left: 10px;
 }
+.foto-go{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.go-especial{
+    padding-top: 30px;
+}
+#go-especial-titulo{
+    background-color: khaki;
+    border: none;
+}
