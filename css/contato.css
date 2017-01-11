@@ -71,3 +71,6 @@ input[value="Outro"]:checked + input {
 .com-icone[for="email"]::after {
     background-image: url(../images/email.png);
 }
+#tab-simples{
+    text-decoration: none;
+}

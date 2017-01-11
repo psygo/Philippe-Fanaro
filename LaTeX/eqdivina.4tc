@@ -1,0 +1,4 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{Equa\IeC {\c c}\IeC {\~a}o Divina}}{1}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-2}{Uma vers\IeC {\~a}o mais pr\IeC {\'a}tica...}}{2}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-3}{A vers\IeC {\~a}o mais mais direta}}{3}\relax 

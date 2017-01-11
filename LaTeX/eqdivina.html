@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title></title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
+<!-- html --> 
+<meta name="src" content="eqdivina.tex"> 
+<meta name="date" content="2017-01-10 21:01:00"> 
+<link rel="stylesheet" type="text/css" href="eqdivina.css"> 
+</head><body 
+>
+   <h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Equação Divina</h3>
+<!--l. 11--><p class="noindent" >Imagino que a compreensão do porquê dessa fórmula dependa do seu nível de conhecimento. Primeiro
+exporei uma maneira mais prática para a existência de tal fórmula, depois algo mais rigoroso, uma
+demonstração.
+<!--l. 13--><p class="indent" >   A &#8221;equação divina&#8221; sai diretamente se usarmos a definição da fórmula de Euler (para quem não sabe, <img 
+src="eqdivina0x.png" alt="e  "  class="math" > é
+uma constante, o número de Euler, <img 
+src="eqdivina1x.png" alt="               1n
+e = limn&#x2192; &#x221E;(1+  n) &#x2248; 2.71828  "  class="math" >):
+   <table 
+class="equation"><tr><td><a 
+ id="x1-1001r1"></a>
+   <center class="math-display" >
+<img 
+src="eqdivina2x.png" alt="ix
+e  = cos(x)+ isen(x)
+" class="math-display" ></center></td><td class="equation-label">(1)</td></tr></table>
+<!--l. 17--><p class="nopar" >
+<!--l. 19--><p class="indent" >   i.e., na &#8221;equação divina&#8221;:
+<!--l. 21--><p class="indent" >
+<table 
+class="align">
+                                 <tr><td 
+class="align-odd"></td>                                 <td 
+class="align-even"><span 
+class="cmmi-10">e</span><sup><span 
+class="cmmi-7">i&#x03C0;</span></sup> + 1 = 0</td>                                                                             <td 
+class="align-label"><a 
+ id="x1-1002r2"></a>(2)
+                                 </td></tr><tr><td 
+class="align-odd"></td>                                 <td 
+class="align-even"><span 
+class="cmmi-10">cos</span>(<span 
+class="cmmi-10">&#x03C0;</span>) + <span 
+class="cmmi-10">isen</span>(<span 
+class="cmmi-10">&#x03C0;</span>) + 1 = 0</td>                                                                  <td 
+class="align-label"><a 
+ id="x1-1003r3"></a>(3)
+                                 </td></tr><tr><td 
+class="align-odd"></td>                                 <td 
+class="align-even"> <span 
+class="cmsy-10">- </span>1 + 1 = 0</td>                                                                            <td 
+class="align-label"><a 
+ id="x1-1004r4"></a>(4)                                 </td></tr></table>
+
+<!--l. 27--><p class="noindent" >
+   <h4 class="likesubsectionHead"><a 
+ id="x1-2000"></a>Uma versão mais prática...</h4>
+<!--l. 29--><p class="noindent" >Mas de onde vem a tal fórmula de Euler (<a 
+href="#x1-1001r1">1<!--tex4ht:ref: euler --></a>)?
+<!--l. 31--><p class="indent" >   Vejamos o problema de um ponto de vista mais prático. É bastante irritante termos de lidar com senos de
+cossenos toda vez que queiramos fazer contas com números complexos (aliás, que nome horrível para um
+conjunto de números...), é muito imprático fazer contas de multiplicação por exemplo. Mas e se pudéssemos
+representá-los na base de algum número, como uma exponencial? As multiplicações seriam muito mais fáceis,
+seria somente necessário somar os expoentes.
+<!--l. 33--><p class="indent" >   Para chegar em tal fórmula, primeiro poderíamos utilizar aproximações para as fórmulas do seno e cosseno.
+Pelas séries de Maclaurin, temos que:
+<!--l. 35--><p class="indent" >
+<table 
+class="align">
+                         <tr><td 
+class="align-odd"><span 
+class="cmmi-10">cos</span>(<span 
+class="cmmi-10">x</span>)</td>                         <td 
+class="align-even"> = <span 
+class="cmex-10">&#x2211;</span>
+  <sub><span 
+class="cmmi-7">n</span><span 
+class="cmr-7">=0</span></sub><sup><span 
+class="cmr-7">+</span><span 
+class="cmsy-7">&#x221E;</span></sup><img 
+src="eqdivina3x.png" alt="(- 1)n
+(2n)!"  class="frac" align="middle"> = 1 <span 
+class="cmsy-10">-</span><img 
+src="eqdivina4x.png" alt="x2
+2!"  class="frac" align="middle"> + <img 
+src="eqdivina5x.png" alt="x4
+4!"  class="frac" align="middle"> <span 
+class="cmsy-10">-</span><img 
+src="eqdivina6x.png" alt="&#x22C5;&#x22C5;&#x22C5;"  class="@cdots" ></td>                                                    <td 
+class="align-label"><a 
+ id="x1-2001r5"></a>(5)
+                         </td></tr><tr><td 
+class="align-odd"><span 
+class="cmmi-10">sen</span>(<span 
+class="cmmi-10">x</span>)</td>                         <td 
+class="align-even"> = <span 
+class="cmex-10">&#x2211;</span>
+  <sub><span 
+class="cmmi-7">n</span><span 
+class="cmr-7">=0</span></sub><sup><span 
+class="cmr-7">+</span><span 
+class="cmsy-7">&#x221E;</span></sup><img 
+src="eqdivina7x.png" alt=" (- 1)n
+(2n+-1)!"  class="frac" align="middle"> = <span 
+class="cmmi-10">x </span><span 
+class="cmsy-10">-</span><img 
+src="eqdivina8x.png" alt="x3
+3!"  class="frac" align="middle"> + <img 
+src="eqdivina9x.png" alt="x5
+-5!"  class="frac" align="middle"> <span 
+class="cmsy-10">-</span><img 
+src="eqdivina10x.png" alt="&#x22C5;&#x22C5;&#x22C5;"  class="@cdots" ></td>                                                  <td 
+class="align-label"><a 
+ id="x1-2002r6"></a>(6)                         </td></tr></table>
+<!--l. 40--><p class="indent" >   Sendo assim, podemos escrever:
+   <table 
+class="equation"><tr><td><a 
+ id="x1-2003r7"></a>
+   <center class="math-display" >
+<img 
+src="eqdivina11x.png" alt="                (    x2   x4     )   (     x3  x5     )
+cos(x)+ isen(x) =  1- -- + -- - &#x22C5;&#x22C5;&#x22C5;  + i x-  --+ -- - &#x22C5;&#x22C5;&#x22C5;
+                      2!   4!               3!  5!
+" class="math-display" ></center></td><td class="equation-label">(7)</td></tr></table>
+<!--l. 44--><p class="nopar" >
+<!--l. 46--><p class="indent" >   Se rearranjarmos e organizarmos, chegamos a:
+<!--l. 48--><p class="indent" >
+
+<table 
+class="align">
+      <tr><td 
+class="align-odd"><span 
+class="cmmi-10">cos</span>(<span 
+class="cmmi-10">x</span>) + <span 
+class="cmmi-10">isen</span>(<span 
+class="cmmi-10">x</span>)</td>      <td 
+class="align-even"> = 1 + <span 
+class="cmmi-10">ix </span><span 
+class="cmsy-10">-</span><img 
+src="eqdivina12x.png" alt="x2
+-2!"  class="frac" align="middle"> <span 
+class="cmsy-10">-</span><img 
+src="eqdivina13x.png" alt="ix3
+-3!"  class="frac" align="middle"> + <img 
+src="eqdivina14x.png" alt="x4
+4!"  class="frac" align="middle"> + <img 
+src="eqdivina15x.png" alt="ix5
+-5!"  class="frac" align="middle"> <span 
+class="cmsy-10">-</span><img 
+src="eqdivina16x.png" alt="x6
+6!"  class="frac" align="middle"> <span 
+class="cmsy-10">-</span><img 
+src="eqdivina17x.png" alt="ix7
+-7!"  class="frac" align="middle"> + <img 
+src="eqdivina18x.png" alt="x8
+8!"  class="frac" align="middle"> + <img 
+src="eqdivina19x.png" alt="&#x22C5;&#x22C5;&#x22C5;"  class="@cdots" ></td>                         <td 
+class="align-label"><a 
+ id="x1-2004r8"></a>(8)
+      </td></tr><tr><td 
+class="align-odd"></td>                    <td 
+class="align-even"> = 1 + <span 
+class="cmmi-10">ix </span>+ <img 
+src="eqdivina20x.png" alt="(ix)2
+-----
+  2!"  class="frac" align="middle"> + <img 
+src="eqdivina21x.png" alt="(ix)3
+-----
+  3!"  class="frac" align="middle"> + <img 
+src="eqdivina22x.png" alt="(ix)4
+-----
+  4!"  class="frac" align="middle"> + <img 
+src="eqdivina23x.png" alt="(ix )5
+-----
+ 5!"  class="frac" align="middle"> + <img 
+src="eqdivina24x.png" alt="(ix)6
+-----
+ 6!"  class="frac" align="middle"> + <img 
+src="eqdivina25x.png" alt="(ix)7
+-----
+ 7!"  class="frac" align="middle"> + <img 
+src="eqdivina26x.png" alt="(ix)8
+-----
+ 8!"  class="frac" align="middle"> + <img 
+src="eqdivina27x.png" alt="&#x22C5;&#x22C5;&#x22C5;"  class="@cdots" ></td>            <td 
+class="align-label"><a 
+ id="x1-2005r9"></a>(9)      </td></tr></table>
+<!--l. 53--><p class="indent" >   Finalmente, utilizando a definição de <img 
+src="eqdivina28x.png" alt=" k  &#x2211;+ &#x221E;  kn
+e =   n=0 n!  "  class="math" >, temos:
+   <table 
+class="equation"><tr><td><a 
+ id="x1-2006r10"></a>
+   <center class="math-display" >
+<img 
+src="eqdivina29x.png" alt="                 ix
+cos(x)+ isen(x ) = e
+" class="math-display" ></center></td><td class="equation-label">(10)</td></tr></table>
+<!--l. 57--><p class="nopar" >
+<!--l. 59--><p class="noindent" >
+   <h4 class="likesubsectionHead"><a 
+ id="x1-3000"></a>A versão mais mais direta</h4>
+<!--l. 61--><p class="noindent" >Infelizmente precisaremos de algum <span 
+class="cmti-10">C</span><span 
+class="cmti-10">álculo </span>elementar...
+<!--l. 63--><p class="indent" >   A nossa intenção é achar uma fórmula do tipo:
+   <table 
+class="equation"><tr><td><a 
+ id="x1-3001r11"></a>
+   <center class="math-display" >
+<img 
+src="eqdivina30x.png" alt="ix
+e = r(cos(&#x03B8;) + isen(&#x03B8;))
+" class="math-display" ></center></td><td class="equation-label">(11)</td></tr></table>
+
+<!--l. 67--><p class="nopar" >
+<!--l. 69--><p class="indent" >   Escolhemos a base <img 
+src="eqdivina31x.png" alt="e  "  class="math" > para a representação exponencial pois é a melhor base para se fazer <span 
+class="cmti-10">c</span><span 
+class="cmti-10">álculo</span>, é a
+linguagem natural das derivadas e integrais. <img 
+src="eqdivina32x.png" alt="&#x03B8;  "  class="math" > e <img 
+src="eqdivina33x.png" alt="r)  "  class="math" > são incógnitas, uma vez que, na representação
+polar, não sabemos qual raio ou se há algum desvio angular para a representação exponencial com
+<img 
+src="eqdivina34x.png" alt="e  "  class="math" >.
+<!--l. 71--><p class="indent" >   Derivando <a 
+href="#x1-3001r11">11<!--tex4ht:ref: thetar1 --></a>:
+   <table 
+class="equation"><tr><td><a 
+ id="x1-3002r12"></a>
+   <center class="math-display" >
+<img 
+src="eqdivina35x.png" alt=" d                            dr                    d&#x03B8;
+--(eix) = ieix = (cos(&#x03B8;) + isen(&#x03B8;))-+ r(- sen(&#x03B8;)+ icos(&#x03B8;))-
+dx                            dx                    dx
+" class="math-display" ></center></td><td class="equation-label">(12)</td></tr></table>
+<!--l. 75--><p class="nopar" >
+<!--l. 77--><p class="indent" >   Substituindo <img 
+src="eqdivina36x.png" alt=" ix
+e  = r(cos(&#x03B8;)+ isen(&#x03B8;))  "  class="math" >, temos que:
+   <table 
+class="equation"><tr><td><a 
+ id="x1-3003r13"></a>
+   <center class="math-display" >
+<img 
+src="eqdivina37x.png" alt="                                  dr                    d&#x03B8;
+ir(cos(&#x03B8;)+ isen(&#x03B8;)) = (cos(&#x03B8;)+ isen(&#x03B8;))--+ r(- sen(&#x03B8;)+ icos(&#x03B8;))---
+                                  dx                    dx
+" class="math-display" ></center></td><td class="equation-label">(13)</td></tr></table>
+<!--l. 81--><p class="nopar" >
+<!--l. 83--><p class="indent" >   Rearranjando,
+   <table 
+class="equation"><tr><td><a 
+ id="x1-3004r14"></a>
+   <center class="math-display" >
+<img 
+src="eqdivina38x.png" alt="       (d&#x03B8;    )        dr   (       (d&#x03B8;    )        dr)
+rsen(&#x03B8;) ---- 1  + cos(&#x03B8;)---+ i rcos(&#x03B8;) ---- 1  + sen (&#x03B8;---) = 0
+        dx             dx            dx            dx
+" class="math-display" ></center></td><td class="equation-label">(14)</td></tr></table>
+<!--l. 87--><p class="nopar" >
+<!--l. 89--><p class="indent" >   Isso força:
+   <table 
+class="equation"><tr><td><a 
+ id="x1-3005r15"></a>
+
+   <center class="math-display" >
+<img 
+src="eqdivina39x.png" alt="d&#x03B8;-     dr-
+dx = 1 e dx = 0
+" class="math-display" ></center></td><td class="equation-label">(15)</td></tr></table>
+<!--l. 93--><p class="nopar" >
+<!--l. 95--><p class="indent" >   Ou seja, <img 
+src="eqdivina40x.png" alt="r = k1  "  class="math" > e <img 
+src="eqdivina41x.png" alt="&#x03B8; = x + k2  "  class="math" >, onde <img 
+src="eqdivina42x.png" alt="k1  "  class="math" > e <img 
+src="eqdivina43x.png" alt="k2  "  class="math" > são constantes quais quer.
+<!--l. 97--><p class="indent" >   Além disso, os valores iniciais <img 
+src="eqdivina44x.png" alt="r(0) = 1  "  class="math" > e <img 
+src="eqdivina45x.png" alt="&#x03B8;(0) = 0  "  class="math" >, anulam as constantes <img 
+src="eqdivina46x.png" alt="k1  "  class="math" > e <img 
+src="eqdivina47x.png" alt="k2  "  class="math" >. Sendo assim,
+chegamos finalmente a:
+   <table 
+class="equation"><tr><td><a 
+ id="x1-3006r16"></a>
+   <center class="math-display" >
+<img 
+src="eqdivina48x.png" alt="eix = cos(x)+ isen(x)
+" class="math-display" ></center></td><td class="equation-label">(16)</td></tr></table>
+<!--l. 101--><p class="nopar" >
+    
+</body></html> 
+
+
+

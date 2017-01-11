@@ -1,0 +1,103 @@
+\documentclass[a4paper]{article}				
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fullpage}
+
+\begin{document}
+
+\section*{Equação Divina}
+
+Imagino que a compreensão do porquê dessa fórmula dependa do seu nível de conhecimento. Primeiro exporei uma maneira mais prática para a existência de tal fórmula, depois algo mais rigoroso, uma demonstração.
+
+A "equação divina" sai diretamente se usarmos a definição da fórmula de Euler (para quem não sabe, \(e\) é uma constante, o número de Euler, \(e = \lim_{n \to \infty} \Big(1 + \frac{1}{n}\Big)^n \approx 2.71828\)):
+
+\begin{equation} \label{euler}
+e^{i x} = cos(x) + i sen(x)
+\end{equation}
+
+i.e., na "equação divina":
+
+\begin{align} \label{eqdivinademo}
+& e^{i \pi} + 1 = 0 \\
+& cos(\pi) + i sen(\pi) + 1 = 0 \\
+& -1 + 1 = 0
+\end{align}
+
+\subsection*{Uma versão mais prática...}
+
+Mas de onde vem a tal fórmula de Euler (\ref{euler})?
+
+Vejamos o problema de um ponto de vista mais prático. É bastante irritante termos de lidar com senos de cossenos toda vez que queiramos fazer contas com números complexos (aliás, que nome horrível para um conjunto de números...), é muito imprático fazer contas de multiplicação por exemplo. Mas e se pudéssemos representá-los na base de algum número, como uma exponencial? As multiplicações seriam muito mais fáceis, seria somente necessário somar os expoentes.
+
+Para chegar em tal fórmula, primeiro poderíamos utilizar aproximações para as fórmulas do seno e cosseno. Pelas séries de Maclaurin, temos que:
+
+\begin{align}
+cos(x) &= \sum_{n = 0}^{+ \infty} \frac{(-1)^n}{(2n)!} = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots \\
+sen(x) &= \sum_{n = 0}^{+ \infty} \frac{(-1)^n}{(2n+1)!} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots
+\end{align}
+
+Sendo assim, podemos escrever:
+
+\begin{equation}
+cos(x) + i sen(x) = \bigg(1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots\bigg) + i \bigg(x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots\bigg)
+\end{equation}
+
+Se rearranjarmos e organizarmos, chegamos a:
+
+\begin{align}
+cos(x) + i sen(x) &= 1 + ix -\frac{x^2}{2!} - \frac{ix^3}{3!} + \frac{x^4}{4!} + \frac{ix^5}{5!} - \frac{x^6}{6!} - \frac{ix^7}{7!} + \frac{x^8}{8!} + \cdots \\
+&= 1 + ix + \frac{(ix)^2}{2!} + \frac{(ix)^3}{3!} + \frac{(ix)^4}{4!} + \frac{(ix)^5}{5!} + \frac{(ix)^6}{6!} + \frac{(ix)^7}{7!} + \frac{(ix)^8}{8!} + \cdots
+\end{align}
+
+Finalmente, utilizando a definição de \(e^k = \sum_{n=0}^{+\infty} \frac{k^n}{n!}\), temos:
+
+\begin{equation}
+cos(x) + isen(x) = e^{ix}
+\end{equation}
+
+\subsection*{A versão mais direta}
+
+Infelizmente precisaremos de algum \textit{Cálculo} elementar...
+
+A nossa intenção é achar uma fórmula do tipo:
+
+\begin{equation} \label{thetar1}
+e^{ix} = r(cos(\theta) + isen(\theta))
+\end{equation}
+
+Escolhemos a base \(e\) para a representação exponencial pois é a melhor base para se fazer \textit{cálculo}, é a linguagem natural das derivadas e integrais. \(\theta\) e \(r)\) são incógnitas, uma vez que, na representação polar, não sabemos qual raio ou se há algum desvio angular para a representação exponencial com \(e\).
+
+Derivando \ref{thetar1}:
+
+\begin{equation}
+\frac{d}{dx} (e^{ix}) = ie^{ix} = (cos(\theta) + isen(\theta)) \frac{dr}{dx} + r(-sen(\theta) + icos(\theta))\frac{d\theta}{dx}
+\end{equation}
+
+Substituindo \(e^{ix} = r(cos(\theta) + isen(\theta))\), temos que:
+
+\begin{equation}
+ir(cos(\theta) + isen(\theta)) = (cos(\theta) + isen(\theta)) \frac{dr}{dx} + r(-sen(\theta) + icos(\theta))\frac{d\theta}{dx}
+\end{equation}
+
+Rearranjando,
+
+\begin{equation}
+r sen(\theta) \bigg(\frac{d\theta}{dx} - 1\bigg) + cos(\theta) \frac{dr}{dx} + i \bigg(r cos(\theta) \bigg(\frac{d\theta}{dx} - 1 \bigg) + sen(\theta) \frac{dr}{dx} \bigg) = 0
+\end{equation}
+
+Isso força:
+
+\begin{equation}
+\frac{d \theta}{dx} = 1 \ e \ \frac{dr}{dx} = 0
+\end{equation}
+
+Ou seja, \(r = k_1\) e \(\theta = x + k_2\), onde \(k_1\) e \(k_2\) são constantes quais quer.
+
+Além disso, os valores iniciais \(r(0) = 1\) e \(\theta(0) = 0\), anulam as constantes \(k_1\) e \(k_2\). Sendo assim, chegamos finalmente a:
+
+\begin{equation}
+e^{ix} = cos(x) + isen(x)
+\end{equation}
+
+\end{document}
